@@ -25,6 +25,24 @@ CV_CONTACT_NUMBERS = {
 CV_EMAIL = "nicogalenzoga@gmail.com"
 
 
+class Event:
+    def __init__(self, start_date: datetime.date, end_date: datetime.date):
+        self.start_date = start_date
+        self.end_date = end_date
+        self.duration = end_date - start_date
+class Job:
+    ...
+
+class Certification:
+    ...
+
+class Education:
+    ...
+
+class Seminar:
+    ...
+
+
 def main():
     WIP()
 
