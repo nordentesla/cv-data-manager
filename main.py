@@ -23,13 +23,18 @@ CV_CONTACT_NUMBERS = {
     "landline": "+63 42 784 3616"
 }
 CV_EMAIL = "nicogalenzoga@gmail.com"
+CV_ROLES = {
+    'mechanical-engineer': ['hvac', 'power-plant'],
+    'programmer': ['python', 'web-development']
+}
 
 
 class Event:
-    def __init__(self, start_date: date, end_date: date):
+    def __init__(self, start_date: date, end_date: date, role: str):
         self.start_date = start_date
         self.end_date = end_date
         self.duration = end_date - start_date
+        self.role = role
 class Job:
     ...
 
