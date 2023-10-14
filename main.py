@@ -10,7 +10,7 @@ skills and experiences for target job applications.
 
 
 import sys
-import datetime
+from datetime import date
 import re
 
 
@@ -26,7 +26,7 @@ CV_EMAIL = "nicogalenzoga@gmail.com"
 
 
 class Event:
-    def __init__(self, start_date: datetime.date, end_date: datetime.date):
+    def __init__(self, start_date: date, end_date: date):
         self.start_date = start_date
         self.end_date = end_date
         self.duration = end_date - start_date
@@ -49,24 +49,34 @@ def main():
 
 def input_data_manager(input_name: str, prompt: str, 
                        data_type: object, input_format: str):
+    """
+    Input handler for all user inputs for CV data\n
+    Usage:\n
+    input_name - name of data entry\n
+    prompt - prompt for user input\n
+    data_type - data type of user input for proper validation\n
+    input_format - notice for proper format of the specific data entry\n
+    """
     while True:
         # Input Prompt
         print("Input Format for %s: %s", input_name, input_format)
         user_input = input(prompt)
 
-        # Data Conversion
+        # Data Conversion and Validation
         try:
             # For Numbers / Quantity
             if data_type == int:
                 user_input = int(user_input)
             # For Dates
-            elif data_type == datetime.date:
+            elif data_type == date:
                 if matches := re.search(r"^([1-2][0-9]){3}-(0[1-9]|1[0-2])-([0-2][0-9]|3[0-1])$", 
                                         user_input):
                     yyyy = matches.group(1)
                     mm = matches.group(2)
                     dd = matches.group(3)
-                    user_input = datetime.date(yyyy, mm, dd)
+                    user_input = date(yyyy, mm, dd)
+                else:
+                    raise ValueError
         except ValueError:
             print("invalid %s, please type a valid %s\n".capitalize(), input_format, input_name)
             continue
@@ -81,6 +91,9 @@ def error_notice(*notices: str):
     WIP()
 
 def WIP():
+    """
+    Placeholder function for functions and objects currently in development phase
+    """
     sys.exit("---\nunder construction, exiting program...\n---".upper())
 
 if __name__ == "__main__":
