@@ -31,5 +31,31 @@
                 ]
             }
         }
-    ]
+    ],
+    "job": {
+        "Operations Engineer": {
+            "institution": "CBK Power Company Limited"
+        }
+    },
+    "education": {
+        "Bachelor of Science in Mechanical Engineering": {
+            "institution": "Southern Luzon State University",
+            "skillset": "mechanical-engineer",
+            "start_date": "2010-06-02",
+            "end_date": "2015-04-15"
+        },
+        "Northern Studies - one year programme (online)": {
+            "institution": "University of Tromsø",
+            "skillset": "general",
+            "start_date": "2018-08-16",
+            "end_date": "2019-05-25"
+        }
+    },
+    "certification": {
+        "Introduction to Programming with Python": {
+            "institution": "Harvard University",
+            "skillset": "software-engineer",
+            "issued_date": "2023-10"
+        }
+    }
 }

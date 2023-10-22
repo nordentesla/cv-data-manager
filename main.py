@@ -24,13 +24,14 @@ class Event:
 
     def role_handler(self):
         WIP()
+
 class Job:
     ...
 
-class Certification:
+class Education:
     ...
 
-class Education:
+class Certification:
     ...
 
 class Seminar:
