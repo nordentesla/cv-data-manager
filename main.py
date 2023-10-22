@@ -1,11 +1,11 @@
 """
-CV Data Manager
-
-GitHub Repository:
-https://github.com/nordentesla/cv-data-manager
-
-CV Data Manager for flexible management of relevant 
-skills and experiences for target job applications.
+CV Data Manager\n
+\n
+GitHub Repository:\n
+https://github.com/nordentesla/cv-data-manager \n
+\n
+CV Data Manager for flexible management of relevant \n
+skills and experiences for target job applications.\n
 """
 
 
@@ -61,7 +61,11 @@ class Seminar:
 
 
 def main():
-    WIP()
+    print(
+        "CV Data Manager",
+        "Select your role",
+        sep="\n",
+        )
 
 
 def input_data_manager(input_name: str, prompt: str, 
@@ -76,7 +80,7 @@ def input_data_manager(input_name: str, prompt: str,
     """
     while True:
         # Input Prompt
-        print("Input Format for %s: %s", input_name, input_format)
+        print(f"Input Format for {input_name}: {input_format}")
         user_input = input(prompt)
 
         # Data Conversion and Validation
@@ -95,7 +99,7 @@ def input_data_manager(input_name: str, prompt: str,
                 else:
                     raise ValueError
         except ValueError:
-            print("invalid %s, please type a valid %s\n".capitalize(), input_format, input_name)
+            print(f'invalid {input_format}, please type a valid {input_name}\n'.capitalize())
             continue
 
         # Return of data
@@ -109,7 +113,7 @@ def error_notice(*notices: str):
 
 def WIP():
     """
-    Placeholder function for functions and objects currently in development phase
+    Placeholder function for functions and objects currently in development phase\n
     """
     sys.exit("---\nunder construction, exiting program...\n---".upper())
 

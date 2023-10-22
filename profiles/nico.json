@@ -1,0 +1,26 @@
+{
+    "profile":[
+        {
+            "first_name": "Jose Nichole",
+            "middle_name": "Canlas",
+            "last_name": "Galenzoga",
+            "gender": "Male",
+            "contact_numbers": {
+                "mobile": "+63-917-138-0264",
+                "landline": "+63-42-784-3616"
+            },
+            "address": {
+                "line_1": "135 Faustin Flora Ville",
+                "line_2": "Masalukot 1",
+                "city": "Candelaria",
+                "region": "Quezon",
+                "country": "Philippines",
+                "postal_code": "4323"
+            },
+            "email_address": "nicogalenzoga@gmail.com",
+            "skills": {
+                
+            }
+        }
+    ]
+}
