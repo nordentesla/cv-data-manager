@@ -15,29 +15,6 @@ from fpdf import FPDF
 import re
 
 
-# Constants
-CV_FIRST_NAME = "Jose Nichole"
-CV_MIDDLE_NAME = "Canlas"
-CV_LAST_NAME = "Galenzoga"
-CV_GENDER = "Male"
-CV_CONTACT_NUMBERS = {
-    "mobile": "+63 917 138 0264",
-    "landline": "+63 42 784 3616"
-}
-CV_ADDRESS = {
-    "line_1": "135 Faustin Flora Ville",
-    "line_2": "Masalukot 1",
-    "city": "Candelaria",
-    "region": "Quezon",
-    "country": "Philippines",
-    "postal_code": "4323"
-}
-CV_EMAIL_ADDRESS = "nicogalenzoga@gmail.com"
-CV_SKILLS = {'general', 
-            'hvac-r', 'mechanical-engineer', 'power-plant', 'utilities',
-            'python-language', 'web-development', 'artificial-intelligence'}
-
-
 class Event:
     def __init__(self, start_date: date, end_date: date, *skills: str):
         self.start_date = start_date

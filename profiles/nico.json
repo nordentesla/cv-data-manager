@@ -19,7 +19,16 @@
             },
             "email_address": "nicogalenzoga@gmail.com",
             "skills": {
-                
+                "general": [
+                    "communication"
+                ],
+                "mechanical-engineer": [
+                    "hvac-r", "power-plant", "utilities"
+                ],
+                "software-engineer": [
+                    "python-language", "web-development",
+                    "artificial-intelligence"
+                ]
             }
         }
     ]
