@@ -4,7 +4,7 @@ CV Data Manager\n
 GitHub Repository:\n
 https://github.com/nordentesla/cv-data-manager \n
 \n
-CV Data Manager for flexible management of relevant \n
+CV Data Manager for flexible management of relevant\n
 skills and experiences for target job applications.\n
 """
 
@@ -34,16 +34,15 @@ class Education:
 class Certification:
     ...
 
-class Seminar:
+class Training:
     ...
 
 
 def main():
-    print(
-        "CV Data Manager",
-        "Select your role",
-        sep="\n",
-        )
+    try:
+        print("CV Data Manager")
+    except KeyboardInterrupt:
+        sys.exit("program force closed".title())
 
 
 def input_data_manager(input_name: str, prompt: str, 
